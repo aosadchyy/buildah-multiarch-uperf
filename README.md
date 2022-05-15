@@ -37,9 +37,7 @@ uname -a
 ```
 The result should be similar to this and include s390x architecture
 ```
-# cat /etc/os-releases
-cat: /etc/os-releases: No such file or directory
-[root@b34aa4d5f87e /]# cat /etc/os-release 
+# cat /etc/os-release 
 NAME="Red Hat Enterprise Linux"
 VERSION="8.6 (Ootpa)"
 ID="rhel"
