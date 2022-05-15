@@ -1,15 +1,20 @@
 # buildah-multiarch-uperf
-Buildah, podman and quemu to build and run container for a different processor architecture
+Buildah, podman and qemu to build and run container for a different processor architecture
 
-### Building container images using buildah, podman and quemu for a different target architecture
-This project describes a good mid-level approach with buildah, podman and quemu to build and run a container for s390x architecture on a x86 Linux machine. It containerizes a sample open source application - uperf, that can be used to test the network bandwidth by running server and client on 2 VMs, pods, containers etc.
+### Building container images using buildah, podman and qemu for a different target architecture
+This project describes a good mid-level approach with buildah, podman and qemu to build and run a container for s390x architecture on a x86 Linux machine. It containerizes a sample open source application - uperf, that can be used to test the network bandwidth by running server and client on 2 VMs, pods, containers etc.
 
 
-1. Install buildah, podman and quemu
-On Debian or Ubuntu:
+
+1. Install buildah, podman and qemu
+On Debian / Ubuntu:
 ```sudo apt install podman buildah qemu-user-static```
-or on Fedora or RHEL:
+
+or on Fedora / RHEL:
 ```sudo dnf install podman buildah qemu-user-static```
+
+or on Mac:
+```brew install podman buildah qemu-user-static```
 2. Configure podman for dockerhub.io
 Create a config file  ```/etc/containers/registries.conf```
 and paste the following lines:
