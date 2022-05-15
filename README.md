@@ -13,8 +13,8 @@ On Debian / Ubuntu:
 or on Fedora / RHEL:
 ```sudo dnf install podman buildah qemu-user-static```
 
-or on Mac:
-```brew install podman buildah qemu-user-static```
+or on Mac would need to install podman-machine and qemu, which isn't an easy step. Or run Ubuntu/RHEL container in Docker Desktop and follow the same Linux steps.
+
 2. Configure podman for dockerhub.io
 Create a config file  ```/etc/containers/registries.conf```
 and paste the following lines:
